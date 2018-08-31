@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace WebApplication6.Controllers
 {
@@ -12,7 +8,7 @@ namespace WebApplication6.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
